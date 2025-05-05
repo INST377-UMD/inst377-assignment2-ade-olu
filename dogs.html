@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="scripts.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/annyang/2.6.1/annyang.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/simple-slider/1.0.0/simpleslider.min.js"></script>
+    <title>Dogs Page</title>
+  </head>
+  <body>
+    <!-- Main container -->
+    <div class="container">
+      <!-- Nav -->
+      <nav class="nav">
+        <div class="nav-left">
+          <h1><a href="dogs.html">Dogs</a></h1>
+        </div>
+
+        <div class="nav-right">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="stocks.html">Stocks</a></li>
+            <li><a href="dogs.html">Dogs</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <h1 style="text-align: center; margin-top: 4rem">Dogs! 🐶</h1>
+
+      <!-- Body -->
+      <div class="main-body">
+        <!-- Carousel slider -->
+        <div class="carousel-container">
+          <div class="carousel-slide" data-simple-slider id="carousel-slide">
+            <!-- Images will be added here using JS -->
+          </div>
+        </div>
+
+        <!-- Dog breed -->
+        <!-- Buttons for each dog breed -->
+        <div class="dog-breed-container" id="dog-breed-container">
+          <!-- Buttons will be added here using JS -->
+        </div>
+
+        <!-- Dog breed description -->
+        <div class="dog-breed-description" id="dog-breed-description">
+          <h2 id="dog-breed-name">
+            <!-- Dog breed name will be added here using JS -->
+          </h2>
+          <p id="dog-breed-info">
+            <!-- Description will be added here using JS -->
+          </p>
+          <p id="min-life"><!-- Min life will be added here using JS --></p>
+          <p id="max-life"><!-- Max life will be added here using JS --></p>
+        </div>
+
+        <!-- Audio div -->
+        <div class="audio-container">
+          <!-- Audio navigation -->
+          <h2>In this webpage, there are options to navigate using audio</h2>
+          <p>Ensure your mic is enabled to be able to use this feature.</p>
+          <ul>
+            <li>Load Dog Breed</li>
+            <ul>
+              <li>Say: <b>Load Dog Breed &lt;Dog Breed Name&gt;</b></li>
+            </ul>
+            <li>Navigate to a Different Page</li>
+            <ul>
+              <li>Say: <b>Navigate to &lt;page&gt;</b></li>
+            </ul>
+            <li>Change the Page Color</li>
+            <ul>
+              <li>Say: <b>Change the color to &lt;color&gt;</b></li>
+            </ul>
+            <li>Say Hello Back to you</li>
+            <ul>
+              <li>Say: <b>Hello</b></li>
+            </ul>
+          </ul>
+          <!-- Audio controls -->
+          <div class="audio-controls">
+            <button id="turn-on-btn">Turn On Listening</button>
+            <button id="turn-off-btn">Turn Off Listening</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

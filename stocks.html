@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="scripts.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/annyang/2.6.1/annyang.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <title>Stocks Page</title>
+  </head>
+  <body>
+    <!-- Main container -->
+    <div class="container">
+      <!-- Nav -->
+      <nav class="nav">
+        <div class="nav-left">
+          <h1><a href="stocks.html">Stocks</a></h1>
+        </div>
+
+        <div class="nav-right">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="stocks.html">Stocks</a></li>
+            <li><a href="dogs.html">Dogs</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <h1 style="text-align: center; margin-top: 4rem">
+        Let's Chart Some Stocks!
+      </h1>
+
+      <!-- Body -->
+      <div class="main-body">
+        <!-- Form -->
+        <form id="stock-form" class="stock-form">
+          <input
+            type="text"
+            id="stock-name"
+            name="name"
+            maxlength="5"
+            required
+          />
+          <!-- Dropdown for 30, 60 & 90 days -->
+          <select id="days" name="days" required>
+            <option value="thirty-days">30 Days</option>
+            <option value="sixty-days">60 Days</option>
+            <option value="ninety-days">90 Days</option>
+          </select>
+          <!-- Lookup button -->
+          <button type="submit" id="lookup-btn">Lookup</button>
+        </form>
+
+        <!-- Chart div -->
+        <div class="chart-container">
+          <canvas id="stock-chart"></canvas>
+        </div>
+
+        <!-- Table list of top 5 stocks -->
+        <div class="stocks-table-container">
+          <table id="stocks-table">
+            <thead>
+              <tr>
+                <th>Ticker</th>
+                <th>Comment Count</th>
+                <th>Sentiment</th>
+              </tr>
+            </thead>
+            <tbody id="stocks-list">
+              <!-- Stock list will be added here using JS -->
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Audio div -->
+        <div class="audio-container">
+          <!-- Audio navigation -->
+          <h2>In this webpage, there are options to navigate using audio</h2>
+          <p>Ensure your mic is enabled to be able to use this feature.</p>
+          <ul>
+            <li>Lookup a stock</li>
+            <ul>
+              <li>Say: <b>Lookup &lt;Stock Ticker&gt;</b></li>
+            </ul>
+            <li>Navigate to a Different Page</li>
+            <ul>
+              <li>Say: <b>Navigate to &lt;page&gt;</b></li>
+            </ul>
+            <li>Change the Page Color</li>
+            <ul>
+              <li>Say: <b>Change the color to &lt;color&gt;</b></li>
+            </ul>
+            <li>Say Hello Back to you</li>
+            <ul>
+              <li>Say: <b>Hello</b></li>
+            </ul>
+          </ul>
+          <!-- Audio controls -->
+          <div class="audio-controls">
+            <button id="turn-on-btn">Turn On Listening</button>
+            <button id="turn-off-btn">Turn Off Listening</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

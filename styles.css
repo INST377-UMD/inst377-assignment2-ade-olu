@@ -1,0 +1,351 @@
+/* Import Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&display=swap");
+
+/* Body */
+body {
+  font-family: "Atkinson Hyperlegible Next", sans-serif !important;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  color: #1b1c1f;
+  background-color: #f8f8f8;
+}
+
+/* Container */
+.container {
+  max-width: 2000px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+/* Nav header */
+h1 a {
+  text-decoration: none;
+  color: #1b1c1f;
+  transition: color 0.25s;
+}
+
+h1 a:hover {
+  color: #114fec;
+}
+
+/* Nav */
+.nav {
+  width: 100%;
+  background-color: #e6ebf8;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4rem;
+  padding: 0 2rem;
+  box-sizing: border-box;
+}
+
+.nav-left {
+  margin: 0;
+  line-height: 4rem;
+}
+
+/* Nav list */
+.nav-right ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+
+/* Nav items */
+.nav-right ul li {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+/* Nav links */
+.nav-right ul li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  line-height: 4rem;
+  padding: 0 1rem;
+  text-decoration: none;
+  color: #1b1c1f;
+  transition: background-color 0.25s, color 0.25s;
+}
+
+/* Nav hover effect */
+.nav-right ul li a:hover {
+  background-color: #114fec;
+  color: #f8f8f8;
+}
+
+/* Main body */
+.main-body {
+  margin: 4rem auto;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 4rem;
+}
+
+/* Button */
+.stocks-btn,
+.dogs-btn {
+  font-family: "Atkinson Hyperlegible Next", sans-serif !important;
+  font-size: 20px !important;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 2rem 4rem;
+  border-radius: 5px;
+  background-color: #1b1c1f;
+  color: #f8f8f8;
+  cursor: pointer;
+  transition: background-color 0.25s, color 0.25s;
+}
+
+/* Button hover effect */
+.stocks-btn:hover,
+.dogs-btn:hover {
+  background-color: #114fec;
+  color: #f8f8f8;
+}
+
+/* Quote container */
+.quote-container {
+  text-align: center;
+  width: 48rem;
+  font-family: "Atkinson Hyperlegible Next", sans-serif !important;
+  font-size: 16px !important;
+  text-decoration: none;
+  padding: 2rem 4rem;
+  border-radius: 5px;
+  border: 1px solid #1b1c1f;
+  background-color: #e6ebf8;
+  color: #1b1c1f;
+}
+
+/* Audio container */
+.audio-container {
+  width: 48rem;
+  font-family: "Atkinson Hyperlegible Next", sans-serif !important;
+  font-size: 16px !important;
+  text-decoration: none;
+  padding: 2rem 4rem;
+  border-radius: 5px;
+  border: 1px solid #1b1c1f;
+  background-color: #e6ebf8;
+  color: #1b1c1f;
+}
+
+/* Audio controls */
+.audio-controls {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+/* Audio control buttons */
+#turn-on-btn,
+#turn-off-btn {
+  width: 45%;
+  font-family: "Atkinson Hyperlegible Next", sans-serif !important;
+  font-size: 18px !important;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 0.75rem 1rem;
+  border-radius: 5px;
+  border: 1px solid #1b1c1f;
+  background-color: #1b1c1f;
+  color: #f8f8f8;
+  cursor: pointer;
+  transition: background-color 0.25s, color 0.25s;
+}
+
+/* Hover effect */
+#turn-on-btn:hover,
+#turn-off-btn:hover {
+  background-color: #114fec;
+  color: #f8f8f8;
+  border: 1px solid #114fec;
+}
+
+/* Stocks page */
+.stock-form {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+/* Stock input */
+#stock-name {
+  font-family: "Atkinson Hyperlegible Next", sans-serif !important;
+  font-size: 16px;
+  width: 150px;
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: 1px solid #1b1c1f;
+}
+
+/* Dropdown for days */
+#days {
+  font-family: "Atkinson Hyperlegible Next", sans-serif !important;
+  font-size: 16px;
+  width: 150px;
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: 1px solid #1b1c1f;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: url(https://api.iconify.design/akar-icons/chevron-down.svg)
+    no-repeat center / contain;
+  background-size: 16px;
+  background-position: calc(100% - 0.5rem);
+  cursor: pointer;
+  background-color: #f8f8f8;
+}
+
+/* Lookup button */
+#lookup-btn {
+  width: 150px;
+  font-family: "Atkinson Hyperlegible Next", sans-serif !important;
+  font-size: 16px !important;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 0.5rem;
+  border-radius: 5px;
+  background-color: #1b1c1f;
+  border: 1px solid #1b1c1f;
+  color: #f8f8f8;
+  cursor: pointer;
+  transition: background-color 0.25s, color 0.25s;
+}
+
+/* Hover effect */
+#lookup-btn:hover {
+  background-color: #114fec;
+  border: 1px solid #114fec;
+  color: #f8f8f8;
+}
+
+/* Chart container */
+.chart-container {
+  display: none;
+}
+
+/* Chart */
+#stock-chart {
+  width: 56rem;
+  height: 32rem;
+  padding: 1rem;
+  border: 1px solid #1b1c1f;
+  border-radius: 5px;
+}
+
+/* Stocks table container */
+.stocks-table-container {
+  width: 56rem;
+}
+
+/* Stocks table */
+#stocks-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #1b1c1f;
+  font-family: "Atkinson Hyperlegible Next", sans-serif !important;
+  font-size: 16px !important;
+}
+
+/* Table header and cells */
+#stocks-table th,
+#stocks-table td {
+  border: 1px solid #1b1c1f;
+  padding: 1rem;
+  text-align: left;
+  text-align: center;
+  vertical-align: middle;
+}
+
+#stocks-table th {
+  text-transform: uppercase;
+}
+
+#stocks-table thead {
+  background-color: #f0f0f0;
+}
+
+#bullish,
+#bearish {
+  width: 5rem;
+  height: auto;
+}
+
+/* Carousel */
+.carousel-slide {
+  width: 56rem;
+  height: 32rem;
+  border-radius: 5px;
+}
+
+/* Dog breeds buttons container */
+.dog-breed-container {
+  width: 56rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+/* Dog breeds buttons */
+.dog-breed-btn {
+  font-family: "Atkinson Hyperlegible Next", sans-serif !important;
+  font-size: 16px !important;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  border: 1px solid #1b1c1f;
+  background-color: #1b1c1f;
+  color: #f8f8f8;
+  cursor: pointer;
+  transition: background-color 0.25s, color 0.25s;
+}
+
+/* Hover effect */
+.dog-breed-btn:hover {
+  background-color: #114fec;
+  color: #f8f8f8;
+  border: 1px solid #114fec;
+}
+
+/* Dog breed description box */
+.dog-breed-description {
+  display: none;
+  width: 48rem;
+  font-family: "Atkinson Hyperlegible Next", sans-serif !important;
+  font-size: 16px !important;
+  text-decoration: none;
+  padding: 2rem 4rem;
+  border-radius: 5px;
+  border: 1px solid #1b1c1f;
+  background-color: #e6ebf8;
+  color: #1b1c1f;
+}
